@@ -1,4 +1,4 @@
-import Init from "./_init_";
+import Init from "./__init__";
 
 describe('init', () => {
     test('test uncovered if', () => {
