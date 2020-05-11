@@ -45,6 +45,19 @@ describe('calculate', () => {
       expect(result).toBe(2.5);
     });
 
+    it('Divide with memory', function() {
+      const calculator = new Calculator();
+      let result = calculator.Divide(5, 2);
+      result = calculator.Divide(2);
+      expect(result).toBe(1.25);
+    });
+
+    it('Divide with memory from 0', function() {
+      const calculator = new Calculator();
+      const result = calculator.Divide(5);
+      expect(result).toBe(0);
+    });
+
     it('Multiply', function() {
       const calculator = new Calculator();
       const result = calculator.Multiply(5, 2);
