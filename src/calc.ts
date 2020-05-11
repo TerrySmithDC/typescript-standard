@@ -11,7 +11,7 @@ export default class Calculator {
         return a / b;
     }
 
-    public Multiple(a: number, b: number): number {
+    public Multiply(a: number, b: number): number {
         return a * b;
     }
 }

@@ -15,7 +15,13 @@ describe('calculate', () => {
 
     it('Divide', function() {
       const calculator = new Calculator();
-      const result = calculator.Subtract(5, 2);
+      const result = calculator.Divide(5, 2);
+      expect(result).toBe(2.5);
+    });
+
+    it('Multiply', function() {
+      const calculator = new Calculator();
+      const result = calculator.Multiply(5, 2);
       expect(result).toBe(2.5);
     });
   });
