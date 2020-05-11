@@ -12,4 +12,10 @@ describe('calculate', () => {
       const result = calculator.Subtract(5, 2);
       expect(result).toBe(3);
     });
+
+    it('Divide', function() {
+      const calculator = new Calculator();
+      const result = calculator.Subtract(5, 2);
+      expect(result).toBe(2.5);
+    });
   });
