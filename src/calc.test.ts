@@ -20,10 +20,23 @@ describe('calculate', () => {
       expect(result).toBe(5);
     });
 
-    it('subtract', function() {
+    it('', function() {
       const calculator = new Calculator();
       const result = calculator.Subtract(5, 2);
       expect(result).toBe(3);
+    });
+
+    it('subtract with memory', function() {
+      const calculator = new Calculator();
+      let result = calculator.Subtract(5, 2);
+      result = calculator.Subtract(2);
+      expect(result).toBe(1);
+    });
+
+    it('subtract with memory from 0', function() {
+      const calculator = new Calculator();
+      const result = calculator.Subtract(5);
+      expect(result).toBe(-5);
     });
 
     it('Divide', function() {
