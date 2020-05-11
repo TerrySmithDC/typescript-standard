@@ -22,6 +22,6 @@ describe('calculate', () => {
     it('Multiply', function() {
       const calculator = new Calculator();
       const result = calculator.Multiply(5, 2);
-      expect(result).toBe(2.5);
+      expect(result).toBe(10);
     });
   });
