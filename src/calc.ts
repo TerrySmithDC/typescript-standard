@@ -1,9 +1,19 @@
 export default class Calculator {
-    public Add(a, b) {
-        return a + b;
+    private prev: number;
+
+    constructor() {
+        this.prev = 0;
+    }
+    public Add(a: number, b?:number):number {
+        if (!b) {
+            this.prev = this.prev + a;
+        } else {
+            this.prev = a + b;
+        }
+        return this.prev;
     }
 
-    public Subtract(a, b) {
+    public Subtract(a:number, b:number):number {
         return a - b;
     }
 
