@@ -7,6 +7,19 @@ describe('calculate', () => {
       expect(result).toBe(7);
     });
 
+    it('adds with memory', function() {
+      const calculator = new Calculator();
+      let result = calculator.Add(5, 2);
+      result = calculator.Add(2);
+      expect(result).toBe(9);
+    });
+
+    it('adds with memory from 0', function() {
+      const calculator = new Calculator();
+      const result = calculator.Add(5);
+      expect(result).toBe(5);
+    });
+
     it('subtract', function() {
       const calculator = new Calculator();
       const result = calculator.Subtract(5, 2);
