@@ -20,7 +20,7 @@ describe('calculate', () => {
       expect(result).toBe(5);
     });
 
-    it('', function() {
+    it('subtract', function() {
       const calculator = new Calculator();
       const result = calculator.Subtract(5, 2);
       expect(result).toBe(3);
