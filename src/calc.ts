@@ -4,7 +4,7 @@ export default class Calculator {
     constructor() {
         this.prev = 0;
     }
-    public Add(a: number, b?:number):number {
+    public Add(a: number, b?: number): number {
         if (!b) {
             this.prev = this.prev + a;
         } else {
@@ -13,7 +13,7 @@ export default class Calculator {
         return this.prev;
     }
 
-    public Subtract(a:number, b:number):number {
+    public Subtract(a: number, b: number): number {
         return a - b;
     }
 
