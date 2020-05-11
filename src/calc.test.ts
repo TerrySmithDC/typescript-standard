@@ -58,9 +58,9 @@ describe('calculate', () => {
       expect(result).toBe(0);
     });
 
-    // it('Multiply', function() {
-    //   const calculator = new Calculator();
-    //   const result = calculator.Multiply(5, 2);
-    //   expect(result).toBe(10);
-    // });
+    it('Multiply', function() {
+      const calculator = new Calculator();
+      const result = calculator.Multiply(5, 2);
+      expect(result).toBe(10);
+    });
   });
