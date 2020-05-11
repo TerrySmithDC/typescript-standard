@@ -14,7 +14,13 @@ export default class Calculator {
     }
 
     public Subtract(a: number, b: number): number {
-        return a - b;
+        if (!b) {
+            this.prev = this.prev - a;
+        } else {
+            this.prev = a - b;
+        }
+
+        return this.prev;
     }
 
     public Divide(a: number, b: number): number {
