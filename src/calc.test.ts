@@ -63,4 +63,17 @@ describe('calculate', () => {
       const result = calculator.Multiply(5, 2);
       expect(result).toBe(10);
     });
+
+    it('Multiply with memory', function() {
+      const calculator = new Calculator();
+      let result = calculator.Multiply(5, 2);
+      result = calculator.Multiply(2);
+      expect(result).toBe(20);
+    });
+
+    it('Multiply with memory from 0', function() {
+      const calculator = new Calculator();
+      const result = calculator.Multiply(5);
+      expect(result).toBe(0);
+    });
   });
